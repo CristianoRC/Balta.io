@@ -1,0 +1,17 @@
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Testes.deps.json
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Testes.runtimeconfig.json
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Testes.runtimeconfig.dev.json
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Testes.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Testes.pdb
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/obj/Debug/netcoreapp2.0/ContextoDePagamento.Testes.csproj.CoreCompileInputs.cache
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/obj/Debug/netcoreapp2.0/ContextoDePagamento.Testes.AssemblyInfoInputs.cache
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/obj/Debug/netcoreapp2.0/ContextoDePagamento.Testes.AssemblyInfo.cs
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/obj/Debug/netcoreapp2.0/ContextoDePagamento.Testes.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/obj/Debug/netcoreapp2.0/ContextoDePagamento.Testes.pdb
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Compartilhado.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Dominio.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Dominio.pdb
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Testes/bin/Debug/netcoreapp2.0/ContextoDePagamento.Compartilhado.pdb

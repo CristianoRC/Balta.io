@@ -1,0 +1,8 @@
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Compartilhado/bin/Debug/netstandard2.0/ContextoDePagamento.Compartilhado.deps.json
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Compartilhado/bin/Debug/netstandard2.0/ContextoDePagamento.Compartilhado.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Compartilhado/bin/Debug/netstandard2.0/ContextoDePagamento.Compartilhado.pdb
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Compartilhado/obj/Debug/netstandard2.0/ContextoDePagamento.Compartilhado.csproj.CoreCompileInputs.cache
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Compartilhado/obj/Debug/netstandard2.0/ContextoDePagamento.Compartilhado.AssemblyInfoInputs.cache
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Compartilhado/obj/Debug/netstandard2.0/ContextoDePagamento.Compartilhado.AssemblyInfo.cs
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Compartilhado/obj/Debug/netstandard2.0/ContextoDePagamento.Compartilhado.dll
+/home/cristiano/Projetos/Balta.io/1975-Modelando Domínios Rícos/ContextoDePagamento.Compartilhado/obj/Debug/netstandard2.0/ContextoDePagamento.Compartilhado.pdb
