@@ -1,25 +1,26 @@
 using System;
+using ContextoDePagamento.Dominio.ObjetosDeValor;
 
 namespace ContextoDePagamento.Dominio.Entidades
 {
     public class PagamentoCartaoDeCredito : Pagamento
     {
-        public string NomeDoTitular { get; private set; }
+        public Nome NomeDoTitular { get; private set; }
         public string NumeroCartao { get; private set; }
         public string UmtimaTransacao { get; private set; }
 
         public PagamentoCartaoDeCredito(
-            string nomeDoTitular,
+            Nome nomeDoTitular,
             string numeroCartao,
             string umtimaTransacao,
             DateTime data,
             DateTime dataExpiracao,
             decimal total,
             decimal totalPago,
-            string documento,
+            Documento documento,
             string pagador,
-            string endereco,
-            string email) : base(
+            Endereco endereco,
+            Email email) : base(
                 data,
                 dataExpiracao,
                 total,

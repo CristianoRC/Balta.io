@@ -1,10 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ContextoDePagamento.Compartilhado.Entidades;
 
 namespace ContextoDePagamento.Dominio.Entidades
 {
-    public class Assinatura
+    public class Assinatura : Entidade
     {
         IList<Pagamento> _pagamentos;
 

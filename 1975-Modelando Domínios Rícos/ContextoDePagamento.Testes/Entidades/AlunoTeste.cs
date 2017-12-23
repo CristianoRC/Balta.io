@@ -9,13 +9,7 @@ namespace ContextoDePagamento.Testes.Entidades
         [TestMethod]
         public void X()
         {
-            var aluno = new Aluno(
-                "Cristiano",
-                "R. Cunha",
-                "Contato@cristianoprogramador.com",
-                "1568315861");
-
-            Assert.AreEqual("Cristiano R. Cunha", aluno.ToString());
+            
         }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using ContextoDePagamento.Dominio.ObjetosDeValor;
 
 namespace ContextoDePagamento.Dominio.Entidades
 {
@@ -12,10 +13,10 @@ namespace ContextoDePagamento.Dominio.Entidades
             DateTime dataExpiracao,
             decimal total,
             decimal totalPago,
-            string documento,
+            Documento documento,
             string pagador,
-            string endereco,
-            string email) : base(
+            Endereco endereco,
+            Email email) : base(
                 data,
                 dataExpiracao,
                 total,
