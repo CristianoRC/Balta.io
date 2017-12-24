@@ -1,4 +1,5 @@
 using ContextoDePagamento.Dominio.Entidades;
+using ContextoDePagamento.Dominio.ObjetosDeValor;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ContextoDePagamento.Testes.Entidades
@@ -9,7 +10,7 @@ namespace ContextoDePagamento.Testes.Entidades
         [TestMethod]
         public void X()
         {
-            
+
         }
     }
 }

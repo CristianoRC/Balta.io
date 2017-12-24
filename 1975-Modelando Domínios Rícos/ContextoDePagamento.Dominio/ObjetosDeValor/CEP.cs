@@ -1,22 +1,28 @@
 using System;
 using System.Text.RegularExpressions;
+using ContextoDePagamento.Compartilhado.ObjeosDeValor;
 
 namespace ContextoDePagamento.Dominio.ObjetosDeValor
 {
-    public class CEP
+    public class CEP : ObjetoDeValor
     {
         public uint NumeroCEP { get; private set; }
 
         public CEP(string CEP)
         {
-            if (Validacoes.CEP.Validar(CEP))
+            if (Validar(CEP))
             {
                 NumeroCEP = Convert.ToUInt32(CEP);
             }
             else
             {
-                throw new Exception("CEP inválido");
+                AddNotification("CEP.NumeroCEP", "CEP inválido");
             }
+        }
+
+        private bool Validar(string CEP)
+        {
+            return Regex.IsMatch(CEP, ("[0-9]{5}-[0-9]{3}"));
         }
 
         public string Formatar()

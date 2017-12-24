@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
     <ProjectReference Include="..\ContextoDePagamento.Compartilhado\ContextoDePagamento.Compartilhado.csproj" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Flunt" Version="1.0.2" />
+  </ItemGroup>
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
-
 </Project>

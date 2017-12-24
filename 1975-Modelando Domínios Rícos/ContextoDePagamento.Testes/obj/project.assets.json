@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Flunt/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -1604,6 +1616,9 @@
       "ContextoDePagamento.Compartilhado/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Flunt": "1.0.2"
+        },
         "compile": {
           "bin/placeholder/ContextoDePagamento.Compartilhado.dll": {}
         },
@@ -1615,7 +1630,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "ContextoDePagamento.Compartilhado": "1.0.0"
+          "ContextoDePagamento.Compartilhado": "1.0.0",
+          "Flunt": "1.0.2"
         },
         "compile": {
           "bin/placeholder/ContextoDePagamento.Dominio.dll": {}
@@ -1627,6 +1643,16 @@
     }
   },
   "libraries": {
+    "Flunt/1.0.2": {
+      "sha512": "HtQBErf6cJewdP7LzLJEyehePdPKP4ieYoQP8DpiXB6qs1TeuHVF38Bw8TZzz9t7r2j+SWFRoMsU5oJvzSOeBg==",
+      "type": "package",
+      "path": "flunt/1.0.2",
+      "files": [
+        "flunt.1.0.2.nupkg.sha512",
+        "flunt.nuspec",
+        "lib/netstandard1.3/Flunt.dll"
+      ]
+    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "ja/4ujADyhBcB2oXuT8YtD1Vtoj0Mj/bUEDy9iwjtHtlJpK4KiEfq1UxHx+JIc7e6f0dHScTnHA9/vCVOkK6Eg==",
       "type": "package",
@@ -5649,6 +5675,7 @@
     ".NETCoreApp,Version=v2.0": [
       "ContextoDePagamento.Compartilhado >= 1.0.0",
       "ContextoDePagamento.Dominio >= 1.0.0",
+      "Flunt >= 1.0.2",
       "MSTest.TestAdapter >= 1.1.18",
       "MSTest.TestFramework >= 1.1.18",
       "Microsoft.NET.Test.Sdk >= 15.3.0-preview-20170628-02",
@@ -5706,6 +5733,10 @@
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
+          },
+          "Flunt": {
+            "target": "Package",
+            "version": "1.0.2"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",

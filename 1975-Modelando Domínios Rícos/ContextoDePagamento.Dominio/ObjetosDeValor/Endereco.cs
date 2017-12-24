@@ -1,8 +1,10 @@
+using ContextoDePagamento.Compartilhado.ObjeosDeValor;
 using ContextoDePagamento.Dominio.Enumeradores;
+using Flunt.Validations;
 
 namespace ContextoDePagamento.Dominio.ObjetosDeValor
 {
-    public class Endereco
+    public class Endereco : ObjetoDeValor
     {
         public CEP CEP { get; private set; }
         public string Logradouro { get; private set; }
@@ -19,6 +21,14 @@ namespace ContextoDePagamento.Dominio.ObjetosDeValor
             this.Tipo = tipo;
             this.Numero = numero;
             this.Bairro = bairro;
+
+            AddNotifications(new Contract()
+            .Requires()
+            .HasMinLen(logradouro, 2, "Endereco.Logradouro", "O logradouro deve ter no mínimo 2 caracteres")
+            .HasMinLen(numero, 1, "Endereco.Numero", "O Numero deve ter no mínimo 1 caractere")
+            .HasMinLen(bairro, 2, "Endereco.Bairro", "O Bairro deve ter no mínimo 2 caracteres")
+            );
+
         }
 
         public Endereco(
@@ -37,6 +47,13 @@ namespace ContextoDePagamento.Dominio.ObjetosDeValor
             this.Complemento = complemento;
             this.Referencia = referencia;
             this.Bairro = bairro;
+
+            AddNotifications(new Contract()
+           .Requires()
+           .HasMinLen(logradouro, 2, "Endereco.Logradouro", "O logradouro deve ter no mínimo 2 caracteres")
+           .HasMinLen(numero, 1, "Endereco.Numero", "O Numero deve ter no mínimo 1 caractere")
+           .HasMinLen(bairro, 2, "Endereco.Bairro", "O Bairro deve ter no mínimo 2 caracteres")
+           );
         }
     }
 }

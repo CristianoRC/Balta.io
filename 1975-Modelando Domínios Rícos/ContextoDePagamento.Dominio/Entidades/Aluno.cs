@@ -21,6 +21,8 @@ namespace ContextoDePagamento.Dominio.Entidades
             Documento = documento;
 
             _assinaturas = new List<Assinatura>();
+
+            AddNotifications(nome, email, documento);
         }
 
         public void AdicionarAssinatura(Assinatura assinatura)

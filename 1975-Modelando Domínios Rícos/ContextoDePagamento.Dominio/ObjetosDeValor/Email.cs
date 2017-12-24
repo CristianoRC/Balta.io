@@ -1,22 +1,20 @@
 using System.Text.RegularExpressions;
+using ContextoDePagamento.Compartilhado.ObjeosDeValor;
+using Flunt.Validations;
 
 namespace ContextoDePagamento.Dominio.ObjetosDeValor
 {
-    public class Email
+    public class Email : ObjetoDeValor
     {
         public string Endereco { get; private set; }
 
-
         public Email(string endereco)
         {
-            if (Regex.IsMatch(endereco, @"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"))
-            {
-                this.Endereco = endereco;
-            }
-            else
-            {
-                throw new System.Exception("Email inválido");
-            }
+            this.Endereco = endereco;
+
+            AddNotifications(new Contract()
+            .Requires()
+            .IsEmail(Endereco, "Email.Endereco", "Email inválido"));
         }
     }
 }
