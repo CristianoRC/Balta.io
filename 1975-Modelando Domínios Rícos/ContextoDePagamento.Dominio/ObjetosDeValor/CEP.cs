@@ -12,7 +12,7 @@ namespace ContextoDePagamento.Dominio.ObjetosDeValor
         {
             if (Validar(CEP))
             {
-                NumeroCEP = Convert.ToUInt32(CEP);
+                NumeroCEP = Convert.ToUInt32(CEP.ToString().Replace("-", ""));
             }
             else
             {
@@ -22,7 +22,11 @@ namespace ContextoDePagamento.Dominio.ObjetosDeValor
 
         private bool Validar(string CEP)
         {
-            return Regex.IsMatch(CEP, ("[0-9]{5}-[0-9]{3}"));
+            if (CEP.Length <= 9)
+            {
+                return Regex.IsMatch(CEP, ("[0-9]{5}-[0-9]{3}"));
+            }
+            return false;
         }
 
         public string Formatar()

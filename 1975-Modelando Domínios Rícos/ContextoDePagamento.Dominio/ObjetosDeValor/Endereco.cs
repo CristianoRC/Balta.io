@@ -6,6 +6,7 @@ namespace ContextoDePagamento.Dominio.ObjetosDeValor
 {
     public class Endereco : ObjetoDeValor
     {
+        //Cidade e UF
         public CEP CEP { get; private set; }
         public string Logradouro { get; private set; }
         public ELogradouro Tipo { get; private set; }

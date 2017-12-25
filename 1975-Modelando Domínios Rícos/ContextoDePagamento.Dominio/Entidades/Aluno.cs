@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using ContextoDePagamento.Compartilhado.Entidades;
 using ContextoDePagamento.Dominio.ObjetosDeValor;
+using Flunt.Validations;
 
 namespace ContextoDePagamento.Dominio.Entidades
 {
@@ -27,12 +28,26 @@ namespace ContextoDePagamento.Dominio.Entidades
 
         public void AdicionarAssinatura(Assinatura assinatura)
         {
-            //Cancela todas as assinaturas e coloca a nova como principal
+
+            bool assinaturaAtiva = false;
 
             foreach (var item in _assinaturas)
-                item.Desativar();
+            {
+                if (item.Ativa)
+                {
+                    assinaturaAtiva = true;
+                }
 
-            _assinaturas.Add(assinatura);
+            }
+
+            AddNotifications(new Contract()
+           .Requires()
+           .IsFalse(assinaturaAtiva, "Aluno.Assinaturas", "Você já tem uma assinatura ativa")
+           .AreNotEquals(0, assinatura.Pagamentos.Count, "Aluno.Assinatura.Pagamentos", "Esta assinatura não possui pagamentos"));
+
+            if (Valid)
+                _assinaturas.Add(assinatura);
+
         }
 
         public override string ToString() => Nome.ToString();

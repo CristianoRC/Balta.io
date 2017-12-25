@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using ContextoDePagamento.Compartilhado.Entidades;
 using ContextoDePagamento.Dominio.ObjetosDeValor;
+using Flunt.Validations;
 
 namespace ContextoDePagamento.Dominio.Entidades
 {
@@ -28,6 +29,11 @@ namespace ContextoDePagamento.Dominio.Entidades
             Pagador = pagador;
             Endereco = endereco;
             Email = email;
+
+            AddNotifications(new Contract()
+            .Requires()
+            .IsLowerOrEqualsThan(0, Total, "Pagamento.Total", "O total não pode ser Zero")
+            .IsGreaterOrEqualsThan(Total, TotalPago, "Pagamento.TotalPago", "O valor pago não pode ser maior que o total"));
         }
     }
 }
